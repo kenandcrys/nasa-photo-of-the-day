@@ -3,7 +3,7 @@ import axios from "axios";
 import Title from "./components/Title";
 import "./App.css";
 import Image from "./components/Image";
-
+import Explanation from "./components/Explanation";
 function App() {
   const [data, setData] = useState('');
 
@@ -27,6 +27,7 @@ function App() {
     <div className="App">
       <Title title={data.title} />
       <Image hdurl={data.hdurl} />
+      <Explanation explanation={data.explanation} />
     </div>
   );
 }

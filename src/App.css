@@ -24,3 +24,13 @@ body {
   border: 30px;
   padding: 25px;
 }
+
+.footer {
+  color: aqua;
+  text-align: center;
+  padding: 25px;
+  font-family: fantasy;
+  font-size: 2rem;
+  font-weight: inherit;
+  
+}

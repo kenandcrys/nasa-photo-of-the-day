@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Title from "./components/Title";
-import "./App.css";
+import Footer from "./components/Footer";
 import Image from "./components/Image";
 import Explanation from "./components/Explanation";
+import "./App.css";
+
+
 function App() {
-  const [data, setData] = useState('');
+  const [data, setData] = useState({});
 
   useEffect(() => {
     axios
@@ -28,6 +31,7 @@ function App() {
       <Title title={data.title} />
       <Image hdurl={data.hdurl} />
       <Explanation explanation={data.explanation} />
+      <Footer copyright={`Copyright:   ${data.copyright}`} date={`Date:   ${data.date}`}/>
     </div>
   );
 }
